@@ -1,13 +1,13 @@
 import React from 'react';
 //import IngredientList from './IngredientList';
 
-export const RecipeItem = () => {
+export const RecipeItem = ({name, image, url, title, ingredients }) => {
     return (
         <>
-            <a href="" title="" className="card card--hover">
-                <img className="card__img" src="" alt="recipe" />
+            <a href={url} title={title} className="card card--hover">
+                <img className="card__img" src={image} alt="recipe" />
                 <div className="card__body">
-                    <h5 className="card__title"></h5>
+                    <h5 className="card__title">{name}</h5>
                    
                 </div>
             </a>
