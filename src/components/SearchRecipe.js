@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export default function Search({handleSearch}) {
     return (
@@ -11,4 +12,6 @@ export default function Search({handleSearch}) {
     )
 }
 
-
+Search.propTypes = {
+    handleSearch: PropTypes.func.isRequired,
+};

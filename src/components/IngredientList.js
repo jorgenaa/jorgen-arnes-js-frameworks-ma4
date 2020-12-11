@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const IngredientList = ({ingredients}) => {
   const ingredientsArray = ingredients.split(',');
@@ -11,5 +12,9 @@ export const IngredientList = ({ingredients}) => {
             </>
     )
 };
+
+IngredientList.propTypes = {
+     ingredients: PropTypes.string.isRequired
+ };
 
 export default IngredientList;

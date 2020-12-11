@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import IngredientList from './IngredientList';
 
 export const RecipeItem = ({name, image, url, title, ingredients }) => {
@@ -15,6 +16,12 @@ export const RecipeItem = ({name, image, url, title, ingredients }) => {
     )
 }
 
-
+RecipeItem.propTypes = {
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    ingredients: PropTypes.string.isRequired
+};
 
 export default RecipeItem;
