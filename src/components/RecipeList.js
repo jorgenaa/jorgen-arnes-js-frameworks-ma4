@@ -3,6 +3,7 @@ import RecipeItem from './RecipeItem';
 const RecipeList = () => {
     const [recipes, setRecipes] = useState([]);
     const url = "https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/";
+    const titleMsg = "For fully description click here";
 
     useEffect(() => {
         fetch(url)
@@ -26,7 +27,8 @@ const RecipeList = () => {
                                     image={thumbnail} 
                                     url={href} 
                                     ingredients={ingredients} 
-                                    key={title} />
+                                    key={title}
+                                    title={titleMsg} />
                     
                     );
                 })}
