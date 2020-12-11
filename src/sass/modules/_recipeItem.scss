@@ -1,0 +1,25 @@
+.card {
+    flex-basis: 300px;
+    margin: 0 16px 16px 0;
+    padding: 16px;
+    box-shadow: 0px 3px 16px $lightGrey;
+    transition: all 0.4s;
+    &--hover {
+        &:hover {
+            box-shadow: 0 0 0 $lightGrey;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        font-size: 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 16px;
+    }
+    &__ingredientList {
+       // margin-top: 16px;
+    }
+}
