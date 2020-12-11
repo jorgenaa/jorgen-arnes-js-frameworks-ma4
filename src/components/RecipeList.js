@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-
+import RecipeItem from './RecipeItem';
 const RecipeList = () => {
     
     const url = "https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/";
@@ -12,7 +12,11 @@ const RecipeList = () => {
     }, []);
 
    
-    return null;
+    return (
+        <>
+            <RecipeItem />
+        </>
+    );
 }
 
 export default RecipeList;
